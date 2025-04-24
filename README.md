@@ -1,4 +1,4 @@
-# nOps cli Configuration and Script Management Script - Proof of Concept
+# nOps cli Configuration and Script Management tool - Proof of Concept
 
 This Python script utilizes the [AWS Bedrock](https://aws.amazon.com/bedrock/) service to assist with tasks related to configuration files and scripts. It uses the Boto3 library to interact with a Bedrock model (e.g., `amazon.nova-pro-v1:0`) to generate, edit, or explain files like YAML, JSON, XML, Dockerfiles, and shell scripts. This tool is ideal for DevOps engineers and requires specific setup in your AWS environment to function correctly. It uses Bedrock Foundation Model LLMs directly instead of via the agents because I was runing into issues where LLM prompts Would get confusted when you add agent instructions to focus the output and sometimes it would try to use files / paths local to the agent to fill the request. I'll keep messing with it ad see if i can get clean output from the agent as its a better structure for a production tool. You can read about the prepovisioning limitations [here](https://the-decoder.com/aws-reportedly-faces-customer-frustration-over-anthropic-usage-limits/): 
 
